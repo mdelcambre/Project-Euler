@@ -17,11 +17,11 @@
 [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23]);
 
 for ($i = $#array-1;$i >=0;$i--){
-    for($j = 0; $j <= $#array;$j++){
+    for($j = 0; $j <= $#{$array[$i]};$j++){
         $left = $array[$i+1][$j];
         $right = $array[$i+1][$j+1];
         $array[$i][$j] += $left if $left > $right;
         $array[$i][$j] += $right if $right >= $left;
     }
 }
-print $array[0][0];
+print "$array[0][0]\n";
