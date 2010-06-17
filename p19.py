@@ -1,5 +1,25 @@
 #!/usr/bin/python
 
+# Months that start with sunday for a given offset.
+
+# Non Leap year
+# 0: Jan Oct
+# 1: May
+# 2: Aug
+# 3: Feb Mar Nov
+# 4: Jun
+# 5: Sep Dec
+# 6: Apr Jul
+
+# Leap Year
+# 0: Jan Apr Jul
+# 1: Oct
+# 2: May
+# 3: Feb Aug
+# 4: Mar Nov
+# 5:Jun
+# 6: Sep Dec
+
 # number of sundays in a year on the first of a month, given an offset (non leap year)
 sun_non_ly = [2, 1, 1, 3, 1, 2, 2]
 # number of sundays in a year on the first of a month, given an offset (leap year)
