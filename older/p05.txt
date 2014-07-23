@@ -1,0 +1,3 @@
+Prime factored all numbers by hand.
+Then constructed the list of prime factors, making sure I had enough of each prime.
+Then multiplied together.  Faster than writing a script
