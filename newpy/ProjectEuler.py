@@ -51,7 +51,34 @@ def p4():
                     print i
                     return 0
 
+def p5():
+    'Finds the smallest common multiple of 1 through 20'
+    print "Running Problem 5:"
+    """Prime factors of 1-20:
+    2
+    3
+    2*2
+    5
+    2*3
+    7
+    2*2*2
+    3*3
+    2*5
+    11
+    2*2*3
+    13
+    2*7
+    3*5
+    2*2*2*2
+    17
+    3*3*2
+    19
+    2*2*5
+    Take the minimum number of each prime to get each number, multiply """
+    print 2*2*2*2*3*3*5*7*11*13*17*19
 
+def p6():
+    ''
 
 
 if __name__ == "__main__":
