@@ -38,6 +38,21 @@ def p3():
         a += 1
     print largest_factor if num < largest_factor else num
 
+def p4():
+    'Finds the largest palandrome product of 3 digit numbers'
+    print "Running Problem 4:"
+    for i in range(999*999,100*100,-1):
+        i_str = str(i)
+        sub1 = i_str[0:int(len(i_str)/2)]
+        sub2 = i_str[:-int(len(i_str)/2)-1:-1]
+        if sub1 == sub2:
+            for j in range(999,100,-1):
+                if i%j==0 and len(str(i/j))==3:
+                    print i
+                    return 0
+
+
+
 
 if __name__ == "__main__":
     try:
