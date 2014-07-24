@@ -89,7 +89,21 @@ def p6():
     print (b**2)-a
 
 def p7():
-    pass
+    'Finds the 10001 prime'
+    print "Running Problem 7:"
+    primes = [2]
+    i = 1
+    isprime = True
+    while len(primes) < 10001:
+        i += 1
+        for prime in primes:
+            if i%prime == 0:
+                isprime = False
+                break
+        if isprime:
+            primes.append(i)
+        isprime = True
+    print primes.pop()
 
 
 if __name__ == "__main__":
