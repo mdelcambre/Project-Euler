@@ -54,6 +54,7 @@ def p4():
 def p5():
     'Finds the smallest common multiple of 1 through 20'
     print "Running Problem 5:"
+
     """Prime factors of 1-20:
     2
     3
@@ -78,7 +79,17 @@ def p5():
     print 2*2*2*2*3*3*5*7*11*13*17*19
 
 def p6():
-    ''
+    'Sum square difference'
+    print "Running Problem 6:"
+    a = 0
+    b = 0
+    for i in range(1,101):
+        a += i**2
+        b += i
+    print (b**2)-a
+
+def p7():
+    pass
 
 
 if __name__ == "__main__":
