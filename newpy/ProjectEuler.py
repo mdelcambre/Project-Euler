@@ -23,8 +23,20 @@ def p2():
     print sum_fib
 
 
+def p3():
+    'Finds the largest prime factor of 600851475143'
+    print "Running Problem 3:"
 
-
+    a = 2
+    num = 600851475143
+    largest_factor = 0
+    while a < num:
+        if num%a == 0:
+            num = num/a
+            largest_factor = a
+            continue
+        a += 1
+    print largest_factor if num < largest_factor else num
 
 
 if __name__ == "__main__":
